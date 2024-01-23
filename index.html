@@ -27,10 +27,9 @@
                         'banner-content-bg': '#131318',
                         'banner-content-color': 'rgba(255, 255, 255, 0.60)',
                         'description-color': 'rgba(19, 19, 24, 0.60)',
-                        'progress-color1': '#FF4240',
-                        'progress-color2': '#49D293',
-                        'progress-color3': '#FFB546',
-                        'progress-color4': '#4C8DF1'
+                        'phone-color' : 'rgba(188, 237, 109, 0.10)',
+                        'email-color' : 'rgba(253, 221, 95, 0.10)',
+                        'location-color': 'rgba(98, 156, 243, 0.10)'
                     }
                 }
             }
@@ -422,6 +421,76 @@
                       </div>
                 </div>
               </div>
+        </section>
+
+        <!-- Get in Touch section  -->
+        <section class="mb-20">
+            <div class="w-11/12 lg:w-[607px] mx-auto text-center space-y-6 mb-8 lg:mb-4">
+                <h2 class="text-banner-content-bg text-2xl md:text-4xl font-semibold">Get In Touch</h2>
+                <p class="text-description-color font-medium">Hockey club is the destination for professional hockey players who play seriously to build a playing based career in future.</p>
+            </div>
+            <div class="flex flex-col lg:flex-row gap-4 w-11/12 mx-auto">
+                <div class="card w-full lg:w-2/5 bg-base-100 shadow-xl border flex flex-col items-center py-10">
+                    <div class="card w-11/12 lg:w-96 bg-phone-color shadow-xl mb-6">
+                        <div class="card-body">
+                          <img class="w-12" src="resources/Images/Group 1171275317.png" alt="">
+                          <p class="text-description-color">Phone Number : </p>
+                          <h2 class="card-title text-lg font-semibold">(+62) 123-321-543</h2>
+                        </div>
+                      </div>
+                      <div class="card w-11/12 lg:w-96 bg-email-color shadow-xl mb-6">
+                        <div class="card-body">
+                          <img class="w-12" src="resources/Images/Group 1171275318.png" alt="">
+                          <p class="text-description-color">Email : </p>
+                          <h2 class="card-title text-lg font-semibold">(+62) 123-321-543</h2>
+                        </div>
+                      </div>
+                      <div class="card w-11/12 lg:w-96 bg-location-color shadow-xl">
+                        <div class="card-body">
+                          <img class="w-12" src="resources/Images/Group 1171275321.png" alt="">
+                          <p class="text-description-color">Location : </p>
+                          <h2 class="card-title text-lg font-semibold">(+62) 123-321-543</h2>
+                        </div>
+                      </div>
+                </div>
+                <div class="card w-full pb-8 lg:w-3/5 bg-base-100 shadow-xl border">
+                    <div class="grid grid-cols-1 md:grid-cols-2 p-7 gap-3">
+                        <label class="form-control w-full max-w-xs">
+                            <div class="label">
+                              <span class="label-text text-lg font-semibold">Your Name</span>
+                            </div>
+                            <input type="text" placeholder="Enter your full name" class="input input-bordered w-full max-w-xs" />
+                        </label>
+                        <label class="form-control w-full max-w-xs">
+                            <div class="label">
+                              <span class="label-text text-lg font-semibold">Your Email</span>
+                            </div>
+                            <input type="text" placeholder="Enter your email" class="input input-bordered w-full max-w-xs" />
+                        </label>
+                        <label class="form-control w-full max-w-xs">
+                            <div class="label">
+                              <span class="label-text text-lg font-semibold">Subject</span>
+                            </div>
+                            <input type="text" placeholder="Enter your subject" class="input input-bordered w-full max-w-xs" />
+                        </label>
+                        <label class="form-control w-full max-w-xs">
+                            <div class="label">
+                              <span class="label-text text-lg font-semibold">Phone Number</span>
+                            </div>
+                            <input type="text" placeholder="Enter your phone number" class="input input-bordered w-full max-w-xs" />
+                        </label>
+                    </div>
+                    <div class="grid grid-cols-1 px-7">
+                        <label class="form-control">
+                            <div class="label">
+                              <span class="label-text text-lg font-semibold">Message</span>
+                            </div>
+                            <textarea class="textarea textarea-bordered h-[260px]" placeholder="Write your message"></textarea>
+                          </label>
+                    </div>
+                    <a class="btn bg-bg-btn-color text-white text-lg w-11/12 mx-auto mt-4">Send Message</a>
+                </div>
+            </div>
         </section>
     </main>
 
