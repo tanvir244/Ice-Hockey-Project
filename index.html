@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hockeys</title>
+    <!-- Tailwind & DaisyUI cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google font : Manrope -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Tailind custom classes -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'bg-btn-color': '#FF4240',
+                        'text-color': '#424247',
+                        'banner-content-bg': '#131318',
+                        'banner-content-color': 'rgba(255, 255, 255, 0.60)'
+
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- custom styles -->
+    <link rel="stylesheet" href="style/style.css">
+    
+</head>
+
+<body>
+    <!-- header -->
+    <header class="container mx-auto relative font-manrope">
+        <!-- navbar -->
+        <div class="navbar bg-base-100 py-5 w-11/12 mx-auto lg:w-full">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Pages</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+                <a class="text-xl md:text-4xl font-bold">Ice <span class="text-bg-btn-color">Hockey</span></a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1 text-lg text-text-color font-medium">
+                    <li><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Pages</a></li>
+                    <li><a>Blog</a></li>
+                    <li><a>Contact</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <button class="btn btn-ghost btn-circle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                </button>
+                <a class="btn bg-bg-btn-color text-white text-lg">Get Ticket</a>
+            </div>
+        </div>
+        <!-- Carousel or slider -->
+        <div class="carousel h-[475px] md:h-[556px] w-full">
+            <!-- slider-1 -->
+            <div id="slide1" class="carousel-item relative w-full">
+                <img src="resources/Images/1.png" class="w-11/12 h-48 mx-auto lg:w-full md:h-96 lg:h-full" />
+                <div class="arrow-icon absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide4" class="btn btn-circle">❮</a>
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <!-- slider-2 -->
+            <div id="slide2" class="carousel-item relative w-full">
+                <img src="resources/Images/2.png" class="w-11/12 h-48 mx-auto lg:w-full md:h-96 lg:h-full" />
+                <div class="arrow-icon absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">❮</a>
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <!-- slider-3 -->
+            <div id="slide3" class="carousel-item relative w-full">
+                <img src="resources/Images/3.png" class="w-11/12 h-48 mx-auto lg:w-full md:h-96 lg:h-full" />
+                <div class="arrow-icon absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle">❮</a>
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <!-- slider-4 -->
+            <div id="slide4" class="carousel-item relative w-full">
+                <img src="resources/Images/4.png" class="w-11/12 h-48 mx-auto lg:w-full md:h-96 lg:h-full" />
+                <div class="arrow-icon absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3" class="btn btn-circle">❮</a>
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+        </div>
+        <div class="banner-content bg-banner-content-bg p-8 w-11/12 lg:w-[502px] mx-auto space-y-4 rounded-lg">
+            <h3 class="text-white text-2xl">Be a best player and gain reward</h3>
+            <p class="text-banner-content-color">Gaining hockey cup is a dream for all players, though few of them are able to get local cup, however it's rare getting world class reward as best hockey
+            player.</p>
+        </div>
+    </header>
+
+    <!-- main -->
+
+    <!-- footer -->
+</body>
+
+</html>
